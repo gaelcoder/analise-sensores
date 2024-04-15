@@ -1,0 +1,36 @@
+{% extends "global/base.html" %}
+{% block content %}
+{% if page_obj %}
+   <table class="rptable">
+    <caption>Últimos Registros</caption>
+    <tr>
+        <th>equipmentID</th>
+        <th>timestamp</th>
+        <th>value</th>
+    </tr>
+    {% for sensorr in page_obj %}
+        <tr>
+            <td>
+                <a>
+                    {{ sensorr.equipmentID|upper  }}
+                </a>
+            </td>
+            <td>
+                <a>
+                    {{ sensorr.timestamp }}
+                </a>
+            </td>
+            <td>
+                <a>
+                    {{ sensorr.value }}
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+   </table>
+   {% else %}
+    <table class="rptable">
+        <caption>Nenhum registro encontrado</caption>
+    </table>
+   {% endif %}
+{% endblock content%}

@@ -1,0 +1,264 @@
+body{
+    background:  #e3e8e9;
+    margin: 0px;
+    padding: 0px;
+}
+
+.rptable{
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+#toppage{
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav{
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    
+}
+
+li{
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 16px;
+    display: inline-block;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.pesquisa{
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+.pagination{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+}
+
+.pagination .step-links{
+    display: flex;
+    gap: 10px;
+    font-family: "Oswald", sans-serif;
+}
+
+.pagination .step-links a{
+    text-decoration: none;
+    display: block;
+    font-family: "Oswald", sans-serif;
+}
+
+.formalise{
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.barraanalise{
+    border: 1px;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    width: 500px;
+    height: 75px;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    padding: auto;
+}
+
+.barrapesquisa{
+    border: 1px;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    width: 200px;
+    height: 26px;
+}
+
+ul{
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+
+.menu-item{
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    font-family: "Oswald", sans-serif;
+}
+
+header{
+    background-color: rgb(13, 0, 61);
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+}
+
+table{
+    margin: 0 auto;
+}
+
+tr:nth-child(even) {
+    background-color: #eefdff;
+  }
+
+tr{
+    background-color: #c7c7c7;
+    height: 35px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.content{
+    background: rgb(243, 247, 253);
+    border-radius: 5px;
+    margin: 30px;
+    padding: 5px;
+    max-width: 97%;
+    box-shadow: 4px 4px 1px #000000;
+    color: black;
+    text-align: auto;
+    align-content: center;
+}
+
+caption{
+    font-size: 24px;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    margin: auto;
+    border: none;
+    font-family: "Oswald", sans-serif;
+    outline: none;
+}
+
+.form-content {
+    margin: 0 auto;
+    border: none;
+}
+  
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: auto;
+    border: none;
+    outline: none;
+}
+
+
+.form-group p {
+    margin: 1px 0;
+    font-family: "Oswald", sans-serif;
+}
+  
+.form-group .help-text,
+.form-group .help-text ~ ul {
+    margin: 0;
+    font-size: 10px;
+    list-style: none;
+    font-family: "Oswald", sans-serif;
+}
+  
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+    border: 1px solid #000000;
+}
+  
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    box-shadow: 1px #000000;
+    border: none;
+}
+  
+.form-group label {
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: #090057;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+  
+.btn:hover {
+    filter: brightness(90%);
+}
+  
+.btn:focus,
+.btn:active {
+    filter: brightness(80%);
+    box-shadow: 0 0 5px #000000;
+}
+  

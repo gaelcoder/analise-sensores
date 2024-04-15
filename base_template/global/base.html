@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset='UTF-8'>
+        <link rel="stylesheet" href="{% static 'global/css/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <title>SENSORES RADIX</title>
+    <head>
+    <body>
+    <header>    
+        <a id="toppage" href="{% url 'sensorizador:index' %}">RADIX SENSORES</a>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="{% url 'sensorizador:registrar' %}" class="menu-item">Registrar</a>
+                </li>
+                <li>
+                    <a href="{% url 'sensorizador:analise' %}" class="menu-item">Análise</a>
+                </li>
+            </ul>
+            <div class="pesquisa">
+                <form action="{% url 'sensorizador:search' %}" method="get">
+                    <input type="search" class="barrapesquisa" 
+                    placeholder="Pesquisa" id="psq" name="q"
+                    value="{{ search_value }}">
+                </form>
+            </div>
+        </nav>
+    </header>
+        <section class="content">
+            {% block content %}{% endblock content %}
+        </section>
+            {% include 'global/partials/_paginator.html'%}
+    </body>
+</html> 

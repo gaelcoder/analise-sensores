@@ -1,0 +1,39 @@
+{% extends "global/base.html" %}
+{% block content %}
+    <h1>MÉDIA SENSOR</h1>
+    <form class="formalise" action="{% url 'sensorizador:analise' %}" method="get">
+        <input type="search" class="barraanalise" 
+        placeholder="Pesquisa" name="p"
+        value="{{ search_valuep }}">
+    </form>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: {{labels|safe}},
+            datasets: [{
+              label: 'Média do Sensor',
+              data: {{data|safe}},
+              backgroundColor: [
+                'purple', 'green'
+              ]
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>      
+{% endblock content %}

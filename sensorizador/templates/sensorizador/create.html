@@ -1,0 +1,23 @@
+{% extends 'global/base.html '%}
+{% block content %}
+    <h1>REGISTRAR DADOS</h1>
+    <div class="form-wrapper">
+        <form action="{% url 'sensorizador:registrar' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset class="form-content">
+            {% for field in form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                {{ field.errors }}
+            </div>
+            {%endfor%}
+        </fieldset>
+        <fieldset class="from-content">
+            <div class="form-group">
+                <button class="btn" type="submit">REGISTRAR</button>
+            </div>
+        </fieldset>
+    </form>
+    </div>
+{% endblock content %}

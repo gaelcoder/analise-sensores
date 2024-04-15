@@ -1,2 +1,2 @@
-from .pag_inserir_views import *
+from .views import *
 from .registros import *

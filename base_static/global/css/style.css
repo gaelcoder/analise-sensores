@@ -250,6 +250,8 @@ caption{
     border-radius: 5px;
     cursor: pointer;
     outline: none;
+    text-align: center;
+    margin: auto;
 }
   
 .btn:hover {

@@ -1,9 +1,10 @@
 from sensorizador.models import Sensor
 from django.core.paginator import Paginator
-from django.http import Http404
 from django.utils import timezone
 from datetime import timedelta, datetime
+from sensorizador.forms import CSVImportForm
 from django.shortcuts import get_object_or_404, render, redirect
+import csv
 
 def index(request):
     sensores = Sensor.objects.all()\
@@ -75,7 +76,7 @@ def analise(request):
                 if sensor.timestamp >= difatual: 
                     soma += float(sensor.value)
                     cont += 1
-                    difatual = difatual + timedelta(hours=+1)
+
         if (cont > 0):
             media = soma / cont
         else:
@@ -127,3 +128,23 @@ def analise(request):
         'sensorizador/analise.html',
         context,
     )
+
+def enviacsv(request):
+    if request.method == 'POST':
+        form = CSVImportForm(request.POST, request.FILES)
+        if form.is_valid():
+            csv_file = request.FILES['csv_file'].read().decode('utf-8').split()
+            csv_reader = csv.DictReader(csv_file)
+
+            for row in csv_reader:
+                Sensor.objects.create(
+                    equipmentID=row['equipmentID'],
+                    timestamp=row['timestamp'],
+                    value=row['value'],
+                )
+
+            return redirect('sensorizador:index')
+    else:
+        form = CSVImportForm()
+
+    return render(request, 'sensorizador/enviacsv.html', {'form': form})

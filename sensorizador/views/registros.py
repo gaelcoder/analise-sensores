@@ -14,8 +14,8 @@ def create(request):
 
         if form.is_valid():
             form.save()
-            with open(CAMINHO_ATUALMENTE, 'w') as arquivo:
-                json.dump(request.POST, arquivo, ensure_ascii=False, indent=2)
+            with open(CAMINHO_ATUALMENTE, 'a') as arquivo:
+                json.dump(request.POST, arquivo, ensure_ascii=False, indent=4)
             arquivo.close()
             return redirect('sensorizador:registrar')
         

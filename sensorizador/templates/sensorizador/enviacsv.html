@@ -1,0 +1,12 @@
+{% extends 'global/base.html '%}
+{% block content %}
+    <h1>REGISTRAR DADOS</h1>
+    <div class="form-wrapper">
+            <form class="formalise" action="{% url 'sensorizador:enviacsv' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <P>Arquivo CSV</P>
+                {{ form.as_p }}
+                <button type="submit" class="btn">Enviar CSV</button>
+            </form>
+    </div>
+{% endblock content %}

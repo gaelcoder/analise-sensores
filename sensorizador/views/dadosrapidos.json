@@ -1,5 +1,44 @@
 {
-  "csrfmiddlewaretoken": "wy5cIZ3gIPyPMlDOSWno8JRiy0ae4awsBrzHBHC53tJmjaJphvZ5E0g5f91nkZ3B",
-  "equipmentID": "EQ-12345",
-  "value": "17.3"
+  "csrfmiddlewaretoken": "APWjAIGIQLCMcGcRE57hfM5F8nqUBixuFIqOtqfxbpNjJvis3EJYL3usPwh3R74D",
+  "equipmentID": "eq-11230",
+  "value": "7.6"
+}{
+  "csrfmiddlewaretoken": "L6jqyPazufyGZ5e58QUzuUZEMlzwacg0QZNVrxJoPTJdwUkGxpwg0bortuqFq1N9",
+  "equipmentID": "EQ-11230",
+  "value": "111.5"
+}{
+    "csrfmiddlewaretoken": "ugRQ0EPjwuSIrurgDDZaxI1Ygb8pIDSwz9llTmo8R83fYjxR2cBR3ZqLXkZyYspF",
+    "equipmentID": "EQ-11230",
+    "value": "11.4"
+}{
+    "csrfmiddlewaretoken": "uTXVl9eIiVCGCtKYXPfyToTyaMiTSdElzMrqeRNxDzNd9iQzmoRfpFilRV9282bu",
+    "equipmentID": "EQ-9999",
+    "value": "19.99"
+}{
+    "csrfmiddlewaretoken": "dq89ZLK7ycoqdg4gnTC2Nsn6Xfko8wnsijCEStjWTQzXK5aRMseJjJMTEobxolUB",
+    "equipmentID": "eq-1344",
+    "timestamp": "2024-04-15 13:24:20",
+    "value": "0.67"
+}{
+    "csrfmiddlewaretoken": "QYfg7Pp3Q50pkkOytsPjxW3YSMgG5s68VRJL0xYSbJbWR9U9S1r03dsLzV7PlhDh",
+    "equipmentID": "EQ-9374",
+    "timestamp": "2024-04-15 13:24:20",
+    "value": "10.10"
+}{
+    "csrfmiddlewaretoken": "YLeUuOx7lihzoSzKFdwSnRFp6J8seDkP3EIpnw6WGWs6VHFl4M8zT84cNSZBusRY",
+    "equipmentID": "EQ-11230",
+    "timestamp": "2024-04-15 13:32:37",
+    "value": "11.4"
+}{
+    "csrfmiddlewaretoken": "XTGVbPMksdMnk4rwMvsuaRWPigT61OdN2Maq4xl9NRXURTx7b44bG8lCZpKfhDKW",
+    "equipmentID": "EQ-11230",
+    "value": "123"
+}{
+    "csrfmiddlewaretoken": "p6UO9FbjKMBJSKvGCSEtWcIGcGY2ZEyIuZoj2nK85qMgpzBh1rgast7tTPPbft5R",
+    "equipmentID": "EQ-11230",
+    "value": "5877.7"
+}{
+    "csrfmiddlewaretoken": "Ef2GlDzMVOXcaoOetTw8IJ8TxHzHsFymJ8wbel8Bgs8JHdUPSs8Pe0xGeQqQIu5v",
+    "equipmentID": "eq-12",
+    "value": "10"
 }

@@ -11,4 +11,7 @@ class SensorForm(forms.ModelForm):
     def clean(self):
         #cleaned_data = self.cleaned_data
         return super().clean()
+
+class CSVImportForm(forms.Form):
+    csv_file = forms.FileField()
     

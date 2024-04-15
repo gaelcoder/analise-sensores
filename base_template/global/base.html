@@ -20,6 +20,9 @@
                 <li>
                     <a href="{% url 'sensorizador:analise' %}" class="menu-item">Análise</a>
                 </li>
+                <li>
+                    <a href="{% url 'sensorizador:enviacsv' %}" class="menu-item">Enviar CSV</a>
+                </li>
             </ul>
             <div class="pesquisa">
                 <form action="{% url 'sensorizador:search' %}" method="get">

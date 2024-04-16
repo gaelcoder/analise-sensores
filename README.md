@@ -5,5 +5,5 @@ do terminal do VSCode, e, com o gitignore, alguns arquivos como a database do SQ
 estar faltando. Mas acredito que ele possa ser criado novamente. Estarei colocando um arquivo
 comprimido em um outro repositório com TODOS os arquivos (incluso documentação).
 
-Um projeto semi-pessoal. Saiu de um desafio de estágio. Aprendi muito no processo e fico feliz que tudo está funcionando
+Um projeto semi-pessoal. Saiu de um desafio de estágio. Aprendi muito no processo e fico feliz que tudo funciona
 quando inicio o servidor.

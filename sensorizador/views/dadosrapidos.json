@@ -1,20 +1,4 @@
 {
-  "csrfmiddlewaretoken": "APWjAIGIQLCMcGcRE57hfM5F8nqUBixuFIqOtqfxbpNjJvis3EJYL3usPwh3R74D",
-  "equipmentID": "eq-11230",
-  "value": "7.6"
-}{
-  "csrfmiddlewaretoken": "L6jqyPazufyGZ5e58QUzuUZEMlzwacg0QZNVrxJoPTJdwUkGxpwg0bortuqFq1N9",
-  "equipmentID": "EQ-11230",
-  "value": "111.5"
-}{
-    "csrfmiddlewaretoken": "ugRQ0EPjwuSIrurgDDZaxI1Ygb8pIDSwz9llTmo8R83fYjxR2cBR3ZqLXkZyYspF",
-    "equipmentID": "EQ-11230",
-    "value": "11.4"
-}{
-    "csrfmiddlewaretoken": "uTXVl9eIiVCGCtKYXPfyToTyaMiTSdElzMrqeRNxDzNd9iQzmoRfpFilRV9282bu",
-    "equipmentID": "EQ-9999",
-    "value": "19.99"
-}{
     "csrfmiddlewaretoken": "dq89ZLK7ycoqdg4gnTC2Nsn6Xfko8wnsijCEStjWTQzXK5aRMseJjJMTEobxolUB",
     "equipmentID": "eq-1344",
     "timestamp": "2024-04-15 13:24:20",

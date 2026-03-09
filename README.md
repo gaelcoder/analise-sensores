@@ -16,6 +16,18 @@ Este projeto está totalmente containerizado usando Docker e Docker Compose, gar
 
 ---
 
+## ✨ Features
+
+*   **Dashboard Interativo:** Visualize os dados dos sensores com paginação para uma navegação fluida.
+*   **Busca Inteligente:** Pesquise registros de sensores por ID de equipamento.
+*   **Análise de Dados:** Gere médias de leituras de um equipamento específico em diferentes períodos (24h, 48h, 1 semana, 1 mês).
+*   **Importação de Dados em Lote:** Envie um arquivo `.csv` para cadastrar múltiplos registros de uma só vez.
+*   **API RESTful:** Tenha acesso a um conjunto completo de endpoints para integrar e gerenciar os sensores programaticamente.
+*   **Documentação de API:** Explore e teste todos os endpoints através de uma interface Swagger gerada automaticamente.
+
+---
+
+
 ## 📋 Pré-requisitos
 
 Antes de começar, garanta que você tenha o [Docker](https://www.docker.com/get-started) e o [Docker Compose](https://docs.docker.com/compose/install/) instalados em sua máquina.
@@ -51,8 +63,23 @@ Siga os passos abaixo para executar a aplicação em seu ambiente de desenvolvim
     *   Inicia o servidor de desenvolvimento do Django.
 
 4.  **Acesse a aplicação:**
-    Após a inicialização ser concluída (você verá os logs do servidor no terminal), abra seu navegador e acesse:
-    [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+    *   **Interface Web:** [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+    *   **Documentação da API (Swagger):** [http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/)
+
+---
+
+## Endpoints da API
+
+A API RESTful segue os padrões e oferece os seguintes endpoints para o recurso `sensores`:
+
+| Método | Endpoint                | Descrição                                  |
+| :----- | :---------------------- | :----------------------------------------- |
+| `GET`  | `/api/sensores/`        | Lista todos os registros de sensores.      |
+| `POST` | `/api/sensores/`        | Cria um novo registro de sensor.           |
+| `GET`  | `/api/sensores/{id}/`   | Retorna um registro de sensor específico.  |
+| `PUT`  | `/api/sensores/{id}/`   | Atualiza um registro de sensor.            |
+| `PATCH`| `/api/sensores/{id}/`   | Atualiza parcialmente um registro de sensor.|
+| `DELETE`| `/api/sensores/{id}/`  | Deleta um registro de sensor.              |
 
 ---
 
@@ -88,3 +115,10 @@ Você **não** precisa reconstruir a imagem (`--build`) para cada mudança no c�
     docker-compose exec web python manage.py makemigrations
     ```
 ```
+
+## 👨‍💻 Autor
+
+Projeto desenvolvido por **Gabriel Lima de Souza Azevedo**.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrielsaz/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gaelcoder)

@@ -1,9 +1,12 @@
+from .serializers import SensorSerializer
 from sensorizador.models import Sensor
 from django.core.paginator import Paginator
 from django.utils import timezone
 from datetime import timedelta, datetime
 from sensorizador.forms import CSVImportForm
 from django.shortcuts import get_object_or_404, render, redirect
+from rest_framework import viewsets
+
 import csv
 
 def index(request):
@@ -38,27 +41,27 @@ def search(request):
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
-    contex = {
+    context = {
         'page_obj': page_obj,
         'search_value': search_value,
     }
     return render(
         request,
         'sensorizador/index.html',
-        contex,
+        context,
     )
 
 
 def pesquisa(request, id):
     sensor_escolhido = get_object_or_404(Sensor.objects, pk=id)
     
-    contex = {
+    context = {
         'sensores': sensor_escolhido,
     }
     return render(
         request,
         'sensorizador/pesquisa.html',
-        contex,
+        context,
     )
 
 def analise(request):
@@ -148,3 +151,8 @@ def enviacsv(request):
         form = CSVImportForm()
 
     return render(request, 'sensorizador/enviacsv.html', {'form': form})
+
+class SensorViewSet(viewsets.ModelViewSet):
+
+    queryset = Sensor.objects.all().order_by('-timestamp')
+    serializer_class = SensorSerializer

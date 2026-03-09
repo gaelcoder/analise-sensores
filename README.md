@@ -114,8 +114,7 @@ Você **não** precisa reconstruir a imagem (`--build`) para cada mudança no c�
     # Exemplo para criar novos arquivos de migração
     docker-compose exec web python manage.py makemigrations
     ```
-```
-
+    
 ## 👨‍💻 Autor
 
 Projeto desenvolvido por **Gabriel Lima de Souza Azevedo**.
